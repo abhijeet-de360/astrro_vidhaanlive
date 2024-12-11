@@ -1,0 +1,23 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "start:dev": "tsc --build && pm2 start dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.1",
+    "wrtc": "^0.4.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
